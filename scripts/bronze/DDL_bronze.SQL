@@ -28,7 +28,7 @@ CREATE TABLE bronze.crm_customers(
 );
 GO
 
-IF OBJECT_ID('bronze.crm_prd_info', 'U') IS NOT NULL
+IF OBJECT_ID('bronze.crm_products', 'U') IS NOT NULL
     DROP TABLE bronze.crm_products;
 
 CREATE TABLE bronze.crm_products(
@@ -42,7 +42,7 @@ CREATE TABLE bronze.crm_products(
 );
 GO
 
-IF OBJECT_ID('bronze.crm_sales_details', 'U') IS NOT NULL
+IF OBJECT_ID('bronze.crm_sales', 'U') IS NOT NULL
     DROP TABLE bronze.crm_sales;
 CREATE TABLE bronze.crm_sales(
     sls_ord_num NVARCHAR(50),
@@ -57,7 +57,7 @@ CREATE TABLE bronze.crm_sales(
 );
 GO
 
-IF OBJECT_ID('bronze.erp_cust_az12', 'U') IS NOT NULL
+IF OBJECT_ID('bronze.erp_customer_demo', 'U') IS NOT NULL
     DROP TABLE bronze.erp_customer_demo;
 CREATE TABLE bronze.erp_customer_demo(
 	cid NVARCHAR(50),
@@ -66,7 +66,7 @@ CREATE TABLE bronze.erp_customer_demo(
 );
 GO
 
-IF OBJECT_ID('bronze.erp_loc_a101', 'U') IS NOT NULL
+IF OBJECT_ID('bronze.erp_location', 'U') IS NOT NULL
     DROP TABLE bronze.erp_location;
 CREATE TABLE bronze.erp_location(
 	cid NVARCHAR(50),
@@ -74,7 +74,7 @@ CREATE TABLE bronze.erp_location(
 );
 GO
 
-IF OBJECT_ID('bronze.erp_px_cat_g1v2', 'U') IS NOT NULL
+IF OBJECT_ID('bronze.erp_product_cat', 'U') IS NOT NULL
     DROP TABLE bronze.erp_product_cat;
 CREATE TABLE bronze.erp_product_cat(
 	id  NVARCHAR(50) ,
